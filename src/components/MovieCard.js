@@ -15,7 +15,7 @@ export default function MovieCard({ movie, isWatchlisted, toggleWatchlist }) {
   return (
     <div key={movie.id} className="movie-card">
       <img
-        src={`${process.env.PUBLIC_URL}/images/${movie.image}`}
+        src={`./images/${movie.image}`}
         alt={movie.title}
         onError={handleError}
       />
