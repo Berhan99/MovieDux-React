@@ -3,7 +3,7 @@ import "../styles.css";
 
 export default function MovieCard({ movie, isWatchlisted, toggleWatchlist }) {
   const handleError = (e) => {
-    e.target.src = "images/default.jpg";
+    e.target.src = `${process.env.PUBLIC_URL}/images/default.jpg`;
   };
 
   const getMovieRatingClass = (rating) => {
