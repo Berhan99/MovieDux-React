@@ -41,7 +41,7 @@ function App() {
               </li>
 
               <li>
-                <Link to="/watchlist">WatchList</Link>
+                <Link to={`${process.env.PUBLIC_URL}/watchlist`}>WatchList</Link> ${process.env.PUBLIC_URL}
               </li>
             </ul>
           </nav>
